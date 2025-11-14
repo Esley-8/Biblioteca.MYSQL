@@ -1,0 +1,7 @@
+biblioteca-cosmica/
+├── index.html
+├── app.js (frontend)
+├── server.js (backend)
+├── db.js (conexión MySQL)
+├── .env
+├── package.json

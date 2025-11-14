@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Biblioteca Cósmica</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white min-h-screen flex items-center justify-center">
+  <div class="bg-gradient-to-br from-pink-500 via-purple-600 to-black p-8 rounded-lg shadow-lg w-full max-w-md">
+    <h1 class="text-3xl font-bold text-center mb-6">📚 Biblioteca Cósmica</h1>
+
+    <form id="bookForm" class="space-y-4">
+      <div>
+        <label for="titulo" class="block text-sm font-medium">Título</label>
+        <input type="text" id="titulo" placeholder="Nombre del libro" class="w-full p-2 rounded bg-black text-white border border-pink-300 focus:outline-none focus:ring-2 focus:ring-pink-500" />
+      </div>
+
+      <div>
+        <label for="autor" class="block text-sm font-medium">Autor</label>
+        <input type="text" id="autor" placeholder="Nombre del autor" class="w-full p-2 rounded bg-black text-white border border-purple-300 focus:outline-none focus:ring-2 focus:ring-purple-500" />
+      </div>
+
+      <div class="flex justify-between mt-4">
+        <button type="button" onclick="buscarLibro()" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded">Buscar</button>
+        <button type="button" onclick="limpiarCampos()" class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded">Limpiar</button>
+        <button type="button" onclick="regresar()" class="bg-gray-700 hover:bg-gray-800 text-white px-4 py-2 rounded">Regresar</button>
+      </div>
+    </form>
+
+    <div id="resultado" class="mt-6 text-center text-white"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
